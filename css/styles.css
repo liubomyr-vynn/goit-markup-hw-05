@@ -51,11 +51,6 @@ img {
 
 /* reset end */
 
-.link:hover,
-.link:focus {
-	color: var(--accent);
-}
-
 .link.current {
 	color: var(--accent);
 }
@@ -153,6 +148,13 @@ img {
 	color: var(--secondary-text);
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+
+.header-navigation:hover,
+.header-navigation:focus,
+.header-contacts:hover,
+.header-contacts:focus {
+	color: var(--accent);
 }
 
 .header-icon {
@@ -432,6 +434,15 @@ img {
 .mail-link,
 .phone-link {
 	color: var(--white-trasparent);
+}
+
+.adress-link:hover,
+.adress-link:focus,
+.mail-link:hover,
+.mail-link:focus,
+.phone-link:hover,
+.phone-link:focus {
+	color: var(--accent);
 }
 
 .socials-title {
