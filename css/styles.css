@@ -11,6 +11,8 @@
 	--button-background-hover: #188ce8;
 	--border-header-color: #ececec;
 	--border-portfolio-item: #eeeeee;
+	--duration: 250ms;
+	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -139,6 +141,9 @@ img {
 	padding-bottom: 32px;
 
 	color: var(--main-text);
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .header-contacts {
@@ -148,6 +153,9 @@ img {
 	color: var(--secondary-text);
 	padding-top: 32px;
 	padding-bottom: 32px;
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .header-navigation:hover,
@@ -220,6 +228,9 @@ img {
 	padding: 10px 32px;
 	min-width: 216px;
 	text-align: center;
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .hero-button:hover,
@@ -352,6 +363,9 @@ img {
 	height: 44px;
 	border-radius: 50%;
 	fill: #afb1b8;
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .socials-link:hover,
@@ -378,6 +392,9 @@ img {
 	fill: #afb1b8;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .clients-link:hover,
@@ -429,11 +446,17 @@ img {
 
 .adress-link {
 	color: var(--white-color);
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .mail-link,
 .phone-link {
 	color: var(--white-trasparent);
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .adress-link:hover,
@@ -465,6 +488,9 @@ img {
 	border-radius: 50%;
 	fill: var(--white-color);
 	background: rgba(255, 255, 255, 0.1);
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .footer-link:hover,
@@ -500,6 +526,9 @@ img {
 	border: 0;
 	cursor: pointer;
 	padding: 6px 22px;
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .filter:hover,
@@ -516,6 +545,9 @@ img {
 
 .portfolio-link {
 	display: block;
+
+	transition-duration: var(--duration);
+	transition-timing-function: var(--timing-function);
 }
 
 .portfolio-link:hover,
