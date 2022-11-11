@@ -53,10 +53,6 @@ img {
 
 /* reset end */
 
-.link.current {
-	color: var(--accent);
-}
-
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -145,6 +141,14 @@ img {
 	transition-duration: var(--duration);
 	transition-timing-function: var(--timing-function);
 }
+
+.header-navigation.current {
+	color: var(--accent);
+}
+
+/* .header-navigation.current::after {
+
+} */
 
 .header-contacts {
 	display: flex;
@@ -304,6 +308,34 @@ img {
 .activities {
 	display: flex;
 	justify-content: space-between;
+}
+
+.activities-item {
+	position: relative;
+}
+
+.activities-item > .label {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	min-height: 70px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	align-items: center;
+	justify-content: center;
+
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--white-color);
+	background: rgba(47, 48, 58, 0.8);
 }
 
 /* Блок Чим ми займаємось */
