@@ -6,9 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
+
+  <!-- Modern normalize -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+  <!-- Custom styles -->
   <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -54,7 +60,7 @@
     <section class="hero">
       <div class="background">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -417,6 +423,22 @@
       </div>
     </div>
   </footer>
+
+  <!-- Модальне вікно -->
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+      <button class="modal-btn" data-modal-close>
+        <svg class="modal-icon" width="18px" height="18px">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/header-scroll.js"></script>
+  <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
