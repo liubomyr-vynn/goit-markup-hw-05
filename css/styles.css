@@ -690,6 +690,8 @@ img {
 
 	background: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(2px);
+
+	transition: opacity 150ms linear, visibility 150ms linear;
 }
 
 .modal-window {
@@ -701,9 +703,11 @@ img {
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
-	animation-duration: 500ms;
-	animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
-	animation-fill-mode: both;
+	animation: 5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.modal-window.modal-animation {
+	animation-name: slide-in-blurred-bottom;
 }
 
 .modal-btn {
@@ -735,3 +739,22 @@ img {
 }
 
 /* Модальне вікно */
+
+/* Анімація */
+
+@keyframes slide-in-blurred-bottom {
+	0% {
+		transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+		transform-origin: 50% 100%;
+		filter: blur(40px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0) scaleY(1) scaleX(1);
+		transform-origin: 50% 50%;
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+
+/* Анімація */
